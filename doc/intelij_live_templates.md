@@ -1,6 +1,6 @@
 # Live template of StatefulWidget, Controller for StatefulWidget, StatefulWidgetView.
 
-Abbreviation: scv
+Abbreviation: stcv
 
 ```
 class $WIDGETNAME$ extends StatefulWidget {
@@ -27,7 +27,7 @@ class _$WIDGETNAME$View extends StatefulWidgetView<$WIDGETNAME$, _$WIDGETNAME$Co
 
 # Live template of only StatefulWidgetView for existing State.
 
-Abbreviation: sv
+Abbreviation: stv
 
 ```
 class _$WIDGETNAME$View extends StatefulWidgetView<$WIDGETNAME$, _$WIDGETNAME$Controller> {
