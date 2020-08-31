@@ -8,7 +8,7 @@ A Dart package that supports for separation of logic and view in a widget.
 
 ## Usage
 
-The counter example with StatefulWidgetView.
+A counter example with StatefulWidgetView.
 
 ```dart
 class MyHomePage extends StatefulWidget {
@@ -77,6 +77,4 @@ TBE. Your pull request is welcome.
 
 ## Features and bugs
 
-Please file feature requests and bugs at the [issue tracker][tracker].
-
-[tracker]: http://example.com/issues/replaceme
+Please file feature requests and bugs at the [issue tracker](https://github.com/polyflection/widget_view/issues).
