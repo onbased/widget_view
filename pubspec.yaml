@@ -1,6 +1,6 @@
 name: widget_view
-description: Support for separation of logic and view in a widget.
-version: 0.1.1
+description: A Dart package that supports for separation of logic and view in a widget.
+version: 0.1.2
 homepage: https://github.com/polyflection/widget_view
 
 environment:
