@@ -65,8 +65,8 @@ abstract class StatefulWidgetView<W extends StatefulWidget, S extends State>
   @protected
   final S controller;
   @protected
-  W get widget => controller.widget;
-  const StatefulWidgetView(this.controller, {Key key}) : super(key: key);
+  W get widget => controller.widget as W;
+  const StatefulWidgetView(this.controller, {Key? key}) : super(key: key);
 }
 
 /// A widget view of a [StatelessWidget] as a stateless controller.
@@ -74,5 +74,5 @@ abstract class StatelessWidgetView<W extends StatelessWidget>
     extends StatelessWidget {
   @protected
   final W controller;
-  const StatelessWidgetView(this.controller, {Key key}) : super(key: key);
+  const StatelessWidgetView(this.controller, {Key? key}) : super(key: key);
 }
