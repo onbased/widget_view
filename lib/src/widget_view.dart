@@ -60,12 +60,14 @@ import 'package:flutter/widgets.dart';
 ///   }
 /// }
 /// ```
-abstract class StatefulWidgetView<W extends StatefulWidget, S extends State>
+abstract class StatefulWidgetView<W extends StatefulWidget, S extends State<W>>
     extends StatelessWidget {
   @protected
   final S controller;
   @protected
-  W get widget => controller.widget as W;
+  W get widget => controller.widget;
+  @protected
+  BuildContext get context => controller.context;
   const StatefulWidgetView(this.controller, {Key? key}) : super(key: key);
 }
 
@@ -73,6 +75,6 @@ abstract class StatefulWidgetView<W extends StatefulWidget, S extends State>
 abstract class StatelessWidgetView<W extends StatelessWidget>
     extends StatelessWidget {
   @protected
-  final W controller;
-  const StatelessWidgetView(this.controller, {Key? key}) : super(key: key);
+  final W widget;
+  const StatelessWidgetView(this.widget, {Key? key}) : super(key: key);
 }

@@ -1,3 +1,8 @@
+## 0.3.0-nullsafety.0
+
+- Access to `context` in `StatefulWidgetView`
+- Rename `controller` to `widget` in `StatelessWidgetView`
+
 ## 0.2.0-nullsafety.0
 
 Null safety version.
