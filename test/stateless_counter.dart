@@ -40,7 +40,7 @@ class _MyHomePageView extends StatelessWidgetView<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(controller.title),
+        title: Text(widget.title),
       ),
       body: Center(
         child: Column(
@@ -50,7 +50,7 @@ class _MyHomePageView extends StatelessWidgetView<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             ValueListenableBuilder(
-              valueListenable: controller.counter,
+              valueListenable: widget.counter,
               builder: (context, value, _) {
                 return Text(
                   '$value',
@@ -62,7 +62,7 @@ class _MyHomePageView extends StatelessWidgetView<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: controller.incrementCounter,
+        onPressed: widget.incrementCounter,
         tooltip: 'Increment',
         child: Icon(Icons.add),
       ),
